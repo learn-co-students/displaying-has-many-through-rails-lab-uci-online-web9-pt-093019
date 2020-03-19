@@ -1,0 +1,4 @@
+<% @appointments.each do |appt| %>
+    <%= appt.pretty_datetime %><br />
+    <%= link_to appt.doctor_name, doctor_path(appt.doctor) %><br />
+<% end %>
